@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Random Art Generator</title>
+    <script type="text/javascript" src="randart.js"></script>
+    <link rel="stylesheet" href="randart.css">
+    <meta>
+</head>
+
+<body onload="generatePalette()">
+    <div class="wrapper">
+        <div class="space"></div>
+
+        <div class="space">
+            <h2>Random Art Generator</h2>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="space" id="option-space">
+            <p>Options</p>
+            <form name="options" id="form-options">
+                <h2>Rectangle:</h2>
+                <input type="checkbox" name="recdraw"> Draw?</input>
+                <input type="checkbox" name="recfill"> Filled?</input> <br><br>
+                <input type="number" name="recnum" placeholder="Number of Rectangles" min="0"></input>
+                <h2>Circles:</h2>
+                <input type="checkbox" name="cirdraw"> Draw?</input>
+                <input type="checkbox" name="cirfill"> Filled?</input> <br><br>
+                <input type="number" name="cirsize" placeholder="Max Size" min="0"></input><br>
+                <input type="number" name="cirnum" placeholder="Number of Circles" min="0"></input>
+                <h2>Irregular Polygons:</h2>
+                <input type="checkbox" name="poldraw"> Draw?</input>
+                <input type="checkbox" name="polfill"> Filled?</input> <br><br>
+                <input type="number" name="polside" placeholder="Number of Sides" min="0"></input><br>
+                <input type="number" name="polnum" placeholder="Number of Polygons" min="0"></input>
+                <h2>Background:</h2>
+                <input type="radio" name="bg">Solid</input>
+                <input type="radio" name="bg">Splatter &nbsp;</input>
+                <input type="radio" name="bg">Stripes</input>
+                <input type="radio" name="bg">None</input>
+            </form>
+        </div>
+        <div class="drawing">
+            <canvas id="canvas" width="750" height="600"></canvas>
+        </div>
+
+        <div class="space">
+            <table id="palette-window">
+                <tr>
+                    <th>Palette</th>
+                </tr>
+                <tr>
+                    <td><canvas id="c1" class="palette-display"></canvas></td>
+                </tr>
+                <tr>
+                    <td><canvas id="c2" class="palette-display"></canvas></td>
+                </tr>
+                <tr>
+                    <td><canvas id="c3" class="palette-display"></canvas></td>
+                </tr>
+                <tr>
+                    <td><canvas id="c4" class="palette-display"></canvas></td>
+                </tr>
+                <tr>
+                    <td><canvas id="c5" class="palette-display"></canvas></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="space">
+            <button class="button" onclick="Generate()">Generate</button>
+            <button id="palette-button" class="button" onclick="generatePalette()">New Palette</button>
+        </div>
+
+        <div class="space"></div>
+
+    </div>
+
+</body>

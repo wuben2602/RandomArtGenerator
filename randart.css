@@ -1,0 +1,66 @@
+*{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: lighter;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    /* grid-gap: 1px; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.space{
+    background-color: rgb(235, 237, 239);
+}
+
+.drawing{
+    /*border: 20px groove rgb(133, 146, 158);*/
+    background-color: rgba(235, 237, 239,0.8);
+}
+
+#canvas{
+    width: 750px;
+    height: 600px; 
+    border: 10px solid rgb(133, 146, 158);
+}
+
+#palette-window{
+    border-spacing: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#palette-button{
+    margin-left: 10%;
+}
+.palette-display{
+    width: 40px;
+    height: 40px; 
+}
+/**/
+#form-options{
+    font-size: 15px;
+}
+/**/
+.button {
+    background-color:rgba(133, 146, 158,0.2);
+    border: 4px rgb(133, 146, 158, 0);
+    color: rgb(0, 0, 0);    
+    padding: 15px 32px;
+    opacity: 0.6;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {opacity:1}
