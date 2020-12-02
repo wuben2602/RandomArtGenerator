@@ -1,9 +1,6 @@
-# RandomArtGenerator
-##### This is an algorithmic art generator -->
+# Algorithmic Art Generator
 
-##### This HTML page makes an HTTP request from colormind.io to generate a color palette
-
-##### From there you can specify the number, size, and type of shapes you want represented on the canvas
+##### A HTML webpage coded in HTML, JavaScript, and CSS which takes user input and generates algorithmic abstract art through the use of HTTP requests to colormind.io and shape-generating algorithms. From there you can experiment with different color palettes and different number and sizes and types of shapes to generate some random abstract art.
 
 ### Example 1:
 <kbd><img src="https://github.com/wuben2602/RandomArtGenerator/blob/main/example1.png" height="300px" width="300px"></kbd>
