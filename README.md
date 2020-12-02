@@ -5,4 +5,7 @@
 
 ##### From there you can specify the number, size, and type of shapes you want represented on the canvas
 
-![example](https://github.com/wuben2602/RandomArtGenerator/blob/main/example.png)
+### Example 1:
+<kbd><img src="https://github.com/wuben2602/RandomArtGenerator/blob/main/example1.png" /></kbd>
+
+### Example 2:
